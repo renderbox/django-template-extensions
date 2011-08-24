@@ -2,7 +2,7 @@ Django Template Extensions (Alpha)
 
 WARNING: This code is in an Alpha state, is untested and in flux, 
 		 use at your own risk.  Don't build anything that depends heavily 
-		 on it yet as somethings may change radically.
+		 on it yet as some things may change radically.
 
 This is intended to be a series of useful extensions for the Django template system.
 The initial push includes a template tag used for rendering partials.  A Partial is 
