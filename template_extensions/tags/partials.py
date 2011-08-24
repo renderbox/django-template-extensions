@@ -18,6 +18,12 @@ class PartialsNode(Node):
         context = Context({ 'partial': item })
         return render_to_string(self.template, context )    # May need to make sure this is properly escaped
 
+        # POSSIBE ALTERNATE WAY TO DO THIS
+        #template = loader.get_template(self.template)
+        #item = self.key.resolve(context)
+        #context = Context({ 'partial': item })
+        #return t.render(context)
+
 
 @register.tag(name="partial")
 def do_partial(parser, token):
