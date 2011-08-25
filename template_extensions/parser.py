@@ -2,6 +2,21 @@ from django.utils.text import smart_split
 # Token Parser
 
 def advanced_split(token):
+    '''
+    advanced_split allows for positional and keyword arguments to be 
+    used in template tags.  If commas are not being used, the more 
+    traditional smart_split behavior is used (where it relies on spaces to 
+    split on).
+    
+    Using the advanced split returns a tuple of (FILTER_NAME, ARGS, KWARGS).
+    
+    An example tag that can used the advanced_split would look like this:
+    
+    {{ filter bob, 1, foo = 10, phrase = "one two three"  }}
+    
+    same python rules for args coming before kwargs applies.
+    '''
+    
     args = []
     kwargs = {}
     onKWArgs = False
