@@ -12,7 +12,7 @@ def advanced_split(token):
     
     An example tag that can used the advanced_split would look like this:
     
-    {{ filter bob, 1, foo = 10, phrase = "one two three"  }}
+    {% filter bob, 1, foo = 10, phrase = "one two three" %}
     
     same python rules for args coming before kwargs applies.
     '''
