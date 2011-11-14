@@ -30,7 +30,7 @@ def do_partial(parser, token):
     '''
     This tag will render a template with a context and include it back
     into the current template.  Good for creating consistent tables
-    accross
+    across the site or using common "widget" style development.
     
     Syntax
     ----
